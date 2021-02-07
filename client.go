@@ -50,7 +50,7 @@ func (c Client) ListContests(input ListContestsInput) (*ListContestsResult, erro
 	if input.OrderBy != "" {
 		data.Set("order_by", input.OrderBy)
 	}
-	resp, err := http.Get(c.endpoint("/contests/?") + data.Encode())
+	resp, err := http.Get(c.endpoint("/contest/?") + data.Encode())
 	if err != nil {
 		return nil, err
 	}
