@@ -7,5 +7,5 @@ type Error struct {
 }
 
 func (e Error) Error() string {
-	return "langaugetool: status " + strconv.Itoa(e.StatusCode)
+	return "clist: status " + strconv.Itoa(e.StatusCode)
 }
